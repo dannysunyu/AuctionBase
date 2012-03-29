@@ -1,4 +1,5 @@
-select count(ItemID)
-from Category
-group by ItemID
-having count(*) = 4;
+select count(*)
+from (select ItemID
+	  from Categories
+	  group by ItemID
+	  Having count(*) = 4);

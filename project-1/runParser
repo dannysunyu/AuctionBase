@@ -2,22 +2,22 @@ make clean
 make
 java MyParser ../ebay_data/items-*.xml
 
-sort user.dat | uniq > tmp_user.dat
+sort user.dat | uniq > user.tmp
 rm user.dat
-mv tmp_user.dat user.dat
-echo 'Successfully removes duplicates lines in user.dat!'
+mv user.tmp user.dat
+echo 'Successfully removes duplicates lines in user.dat.'
 
-sort items.dat | uniq > tmp_items.dat
+sort items.dat | uniq > items.tmp
 rm items.dat
-mv tmp_items.dat items.dat
-echo 'Successfully removes duplicates lines in items.dat!'
+mv items.tmp items.dat
+echo 'Successfully removes duplicates lines in items.dat.'
 
-sort categories.dat | uniq > tmp_categories.dat
+sort categories.dat | uniq > categories.tmp
 rm categories.dat
-mv tmp_categories.dat categories.dat
-echo 'Successfully removes duplicates lines in categories.dat!'
+mv categories.tmp categories.dat
+echo 'Successfully removes duplicates lines in categories.dat.'
 
-sort bid.dat | uniq > tmp_bid.dat
+sort bid.dat | uniq > bid.tmp
 rm bid.dat
-mv tmp_bid.dat bid.dat
-echo 'Successfully removes duplicates lines in bid.dat!'
+mv bid.tmp bid.dat
+echo 'Successfully removes duplicates lines in bid.dat.'

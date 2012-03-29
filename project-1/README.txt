@@ -4,12 +4,12 @@ attribute types at this stage.
 AuctionUsers(UserID, Rating, Location, Country) 
 UserID is the key.
 
-Items(ItemID, Name, Buy_Price, Started, Ends, SellerID, Description) 
+Items(ItemID, Name, Currently, Buy_Price, First_Bid, Started, Ends, SellerID, Description) 
 ItemID is the key.
 
 Categories(ItemID, CategoryName) 
 
-Bids(ItemID, BidderID, Time, Amount)
+Bid(ItemID, BidderID, Time, Amount)
 ItemID, BidderID, Time is the key.
 
 

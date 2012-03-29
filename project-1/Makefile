@@ -8,3 +8,4 @@ MyParser.class: MyParser.java
 clean:
 	rm -rf *.class
 	rm -rf *.dat
+	rm -rf *.db
