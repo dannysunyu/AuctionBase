@@ -44,9 +44,9 @@ class MyParser {
 	static final String columnSeparator = "<>";
 	static DocumentBuilder builder;
 
-	static final String[] typeName = { "none", "Element", "Attr", "Text",
+	static final String[] typeName = {"none", "Element", "Attr", "Text",
 			"CDATA", "EntityRef", "Entity", "ProcInstr", "Comment", "Document",
-			"DocType", "DocFragment", "Notation", };
+			"DocType", "DocFragment", "Notation",};
 
 	static class MyErrorHandler implements ErrorHandler {
 
@@ -193,16 +193,12 @@ class MyParser {
 		 * Fill in code here (you will probably need to write auxiliary
 		 * methods).
 		 */
-
 		Element itemElems = doc.getDocumentElement();
 
 		generateUserLoadFile(itemElems);
 		generateItemLoadFile(itemElems);
 		generateCategoryLoadFile(itemElems);
 		generateBidLoadFile(itemElems);
-
-		/**************************************************************/
-
 	}
 
 	/**
