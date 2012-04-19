@@ -1,5 +1,5 @@
 create table AuctionUser (
-	UserID int PRIMARY KEY, 
+    UserID int PRIMARY KEY, 
     Rating int, 
     Location text, 
     Country text
